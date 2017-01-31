@@ -18,7 +18,7 @@ $ npm install spy-stub
 
 ## spy(object, method)
 
-```
+```js
 const { spy } = require('spy-stub');
 
 const object = {
@@ -41,7 +41,7 @@ it('should spy on a "snore" function', () => {
 ```
 
 ## stub()
-```
+```js
 const { stub } = require('spy-stub');
 
 function functionToTest(number, snore) {
@@ -63,7 +63,7 @@ it('should stub "snore" function', () => {
 ```
 
 ## stub(mockFunction)
-```
+```js
 const { stub } = require('spy-stub');
 
 function functionToTest(number, snore) {
@@ -84,7 +84,7 @@ it('should stub "snore" function', () => {
 ```
 
 ## stub(object, method, mockFunction)
-```
+```js
 const { stub } = require('spy-stub');
 
 it('should stub "snore" function', () => {
