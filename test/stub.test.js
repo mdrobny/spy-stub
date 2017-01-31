@@ -1,6 +1,7 @@
 const assert = require('assert');
 
 const mocha = require('mocha');
+
 const describe = mocha.describe;
 const it = mocha.it;
 
@@ -121,7 +122,7 @@ describe('Stub', () => {
             };
             const method = 'method';
 
-            const mockFn = () => `mock`;
+            const mockFn = () => 'mock';
             const methodStub = stub(object, method, mockFn);
 
             const result = object.method();
